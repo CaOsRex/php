@@ -7,6 +7,48 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php    
+        /* 1. Aritmetics Operators */
+        // + - * / ** %
+
+        $x = 20;
+        $y = 3;
+        $z = null;
+
+        /* $z = $x + $y; */
+        /* $z = $x - $y; */
+        /* $z = $x * $y; */
+        /* $z = $x / $y; */
+        /* $z = $x ** $y; */
+        /* $z = $x % $y; */
+        /* echo $z; */
+
+        /*------------------------------------------------- */
+
+        /* 2. Increment/decrement Operators  */
+        // ++ --
+
+        $counter = 10;
+        /* $counter = $counter + 1; */
+        /* $counter++; */
+        /* $counter--; */
+
+        /* En 2 o mas valores */
+
+        $counter -= 4;
+
+        echo $counter;
+
+        /*------------------------------------------------- */
+
+        /* 3 Jerarquia - precedence */
+        //1. ()
+        //2. **
+        //3. * / %
+        //4. + - 
+
+        $total = 4 + 6 * 2;
+        echo "<br> el total es {$total}"
+    ?>
 </body>
 </html>
