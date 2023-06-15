@@ -10,12 +10,12 @@ class Camper
     //2.    Constructor (metodo magico o especial)
     //      en ocasiones se inicializa con valores parametrizados
 
-    public function __construct($nombre, $email, $celular) // Ideal para inicializar valores de propiedades
+/*     public function __construct($nombre, $email, $celular) // Ideal para inicializar valores de propiedades
     {
         $this->nombre = $nombre;
         $this->email = $email;
         $this->celular = $celular;
-    }
+    } */
 
     //3.    metodos (Getter and Setters)
     
@@ -48,8 +48,11 @@ class Camper
     }
 }
 //  instancia de la clase (objeto) --> variable de instancia
-
-$camper = new Camper("Johan", "johan@campuslands.com", "3209090220");
+/* "Johan", "johan@campuslands.com", "3209090220" */
+$camper = new Camper();
+$camper->setNombre("Maicol");
+$camper->setEmail("Maicol@campuslands.com");
+$camper->setCelular(3209090220);
 echo $camper->getNombre() . "<br>";
 echo $camper->getEmail() . "<br>";
 echo $camper->getCelular() . "<br>";
